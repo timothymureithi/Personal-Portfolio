@@ -15,10 +15,12 @@ const Header = () => {
                     <li><a href="/">Portfolio</a></li>
                     <li><a href="/">News</a></li>
                     <li><a href="/">Contact</a></li>
-
-
+                    <button className='outline-button'>Resume</button>
                 </ul>
             </nav>
+            <div>           
+                 <i className='fas fa-bars'></i>
+                </div>
         </div>
     </header>
     </>
