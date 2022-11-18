@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans Pro";
+  background-color: #f8f8f8;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+.headerContainer {
+  max-width: 90%;
+  margin: auto;
+}
+.flexSB {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+button {
+  background: none;
+  border: none;
+  overflow: none;
+  font-weight: bold;
+}
+.outline-btn {
+  border: 2px solid #000;
+  padding: 14px 40px;
+}
+.row {
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+/*-----------header-------------*/
+header {
+  height: 10vh;
+  line-height: 10vh;
+  background-color: #fff;
+  box-shadow: 0px 7px 2px -3px rgba(89, 89, 89, 0.02);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header a {
+  color: #767676;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_toggler {
+  font-size: 20px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav_toggler {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .nav_menu {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    height: 100vh;
+    padding: 50px;
+    width: 100%;
+    flex-direction: column;
+    background-color: #a06c47;
+    transform: translateX(100%);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  header a {
+    color: #fff;
   }
 }
+.nav_active {
+  transform: translateX(0%);
+}
+/*-----------header-------------*/
