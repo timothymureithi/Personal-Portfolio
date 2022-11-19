@@ -6,21 +6,31 @@ function Header(){
     <header>
         <div className='headerContainer flexSB'>
             <div className='logo'>
-                <img src='./images/logo.png' alt=''/>
+                <img src='./images/logo.png' alt='Timothy'/>
             </div>
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Portfolio</a></li>
-                    <li><a href="/">News</a></li>
-                    <li><a href="/">Contact</a></li>
-                    <button className='outline-button'>Resume</button>
-                </ul>
-            </nav>
-            <div>           
-                 <i className='fas fa-bars'></i>
-                </div>
+            <ul className="flexSB">
+              <li>
+                <a href='/'>Home</a>
+              </li>
+              <li>
+                <a href='/'>About</a>
+              </li>
+              <li>
+                <a href='/'>Portfolio</a>
+              </li>
+              <li>
+                <a href='/'>Articles</a>
+              </li>
+              <li>
+                <a href='/'>Contact</a>
+              </li>
+              <button className='outline-btn'>CV</button>
+            </ul>
+          </nav>
+          <div>
+            <i className='fas fa-bars'></i>
+          </div>
         </div>
     </header>
     </>
